@@ -25,6 +25,10 @@ func Execute() error {
 	return rootCmd.Execute()
 }
 
+func GetRootCmd() *cobra.Command {
+	return rootCmd
+}
+
 func init() {
 	rootCmd.AddCommand(helloCmd)
 }

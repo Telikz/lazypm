@@ -9,7 +9,7 @@ import (
 var helloCmd = &cobra.Command{
 	Use:   "issue",
 	Short: "Manage issues",
-	Long:  `The 'hello' command prints a simple greeting message to the console.`,
+	Long:  `The 'issue' command lets you manage issues.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("Hello from LazyPM CLI!")
 	},
