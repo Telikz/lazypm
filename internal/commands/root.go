@@ -30,5 +30,5 @@ func GetRootCmd() *cobra.Command {
 }
 
 func init() {
-	rootCmd.AddCommand(helloCmd)
+	rootCmd.AddCommand(issueCmd)
 }

@@ -6,7 +6,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var helloCmd = &cobra.Command{
+var issueCmd = &cobra.Command{
 	Use:   "issue",
 	Short: "Manage issues",
 	Long:  `The 'issue' command lets you manage issues.`,
@@ -15,4 +15,17 @@ var helloCmd = &cobra.Command{
 	},
 }
 
-func init() {}
+var createIssueCmd = &cobra.Command{
+	Use:   "create",
+	Short: "Create a new issue",
+	Long:  `The 'create' command lets you create a new issue.`,
+	Run: func(cmd *cobra.Command, args []string) {
+
+	},
+}
+
+func init() {
+	issueCmd.AddCommand(createIssueCmd)
+
+	createIssueCmd.Flags().StringP("title", "t", "", "Issue title")
+}
