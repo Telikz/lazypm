@@ -29,4 +29,5 @@ jobs:
           goos: ${{ matrix.goos }}
           goarch: ${{ matrix.goarch }}
           project_path: "./cmd/lazypm"
+          pre_command: "go mod tidy"
           extra_files: LICENSE README.md
