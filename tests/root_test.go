@@ -1,8 +1,9 @@
 package tests
 
 import (
-	"lazypm/internal/commands"
 	"testing"
+
+	"lazypm/internal/commands"
 )
 
 func TestRootCmd(t *testing.T) {

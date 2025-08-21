@@ -20,7 +20,6 @@ var createIssueCmd = &cobra.Command{
 	Short: "Create a new issue",
 	Long:  `The 'create' command lets you create a new issue.`,
 	Run: func(cmd *cobra.Command, args []string) {
-
 	},
 }
 

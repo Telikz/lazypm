@@ -3,9 +3,10 @@ package tests
 import (
 	"bytes"
 	"io"
-	"lazypm/internal/commands"
 	"os"
 	"testing"
+
+	"lazypm/internal/commands"
 )
 
 func TestIssueCmd(t *testing.T) {

@@ -1,9 +1,10 @@
 package main
 
 import (
-	"lazypm/internal/commands"
 	"log"
 	"os"
+
+	"lazypm/internal/commands"
 )
 
 func main() {

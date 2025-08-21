@@ -1,8 +1,9 @@
 package tests
 
 import (
-	"lazypm/internal/app"
 	"testing"
+
+	"lazypm/internal/app"
 
 	tea "github.com/charmbracelet/bubbletea"
 )
